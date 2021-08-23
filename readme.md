@@ -1,0 +1,1 @@
+This is a project to create an etch-a-sketch in the browser for The Odin Project
