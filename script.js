@@ -1,5 +1,6 @@
 const parentGridDiv = document.querySelector('#parentGrid')
 const clearBtn = document.querySelector('.clear')
+const changeSizeBtn = document.querySelector('#changeSize')
 let size = document.querySelector('#sizeChoice')
 let gridDiv = null
 let numGridDivs = null
@@ -77,12 +78,12 @@ clearBtn.onclick = function() {
     clearBoard()
 }
 
-size.addEventListener("click", function() {
+changeSizeBtn.onclick = function() {
     clearBoard()
-    for(penis = 0; penis < numGridDivs; penis++) {
-        gridDiv[penis].parentNode.removeChild(gridDiv[penis])
+    for(holder = 0; holder < numGridDivs; holder++) {
+        gridDiv[holder].parentNode.removeChild(gridDiv[holder])
     }
     setSize()
-})
+}
 
 setSize()
