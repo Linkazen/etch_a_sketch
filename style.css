@@ -8,6 +8,12 @@ body {
     width: 100%;
 }
 
+.centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #centeredDiv {
     display: flex;
     width: 100%;
@@ -18,21 +24,20 @@ body {
 
 #parentGrid {
     border: 2px solid black;
-    display: inline-grid;
+    display: grid;
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 500px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
-.gridSlot {
-    text-align: center;
-    min-width: 30px;
-    max-width: 30px;
-    min-height: 30px;
-    max-height: 30px;
-
-}
-
 .gridSlot:hover {
     background-color: black;
-
 }
+
+.changeColour {
+    background-color: black;
+}
+
